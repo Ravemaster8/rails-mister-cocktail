@@ -2,7 +2,7 @@
 <div>
   <% @cocktails.each do |cocktail|  %>
     <p>
-      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      <%= link_to cocktail.name, cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill, cocktail_path(cocktail) %>
     </p>
   <% end %>
   <p>

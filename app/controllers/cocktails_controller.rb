@@ -32,7 +32,7 @@ class CocktailsController < ApplicationController
     end
       
     def cocktails_params
-        params.require(:cocktail).permit(:name, :address, :category)
+        params.require(:cocktail).permit(:name, :address, :category, :photo)
     end
           
     def destroy
